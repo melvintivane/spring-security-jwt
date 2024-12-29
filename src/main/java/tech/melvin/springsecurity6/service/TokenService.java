@@ -8,7 +8,7 @@ import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 import org.springframework.stereotype.Service;
 import tech.melvin.springsecurity6.controller.dto.LoginRequest;
 import tech.melvin.springsecurity6.controller.dto.LoginResponse;
-import tech.melvin.springsecurity6.entities.Role;
+import tech.melvin.springsecurity6.entity.Role;
 import tech.melvin.springsecurity6.repository.UserRepository;
 
 import java.time.Instant;
