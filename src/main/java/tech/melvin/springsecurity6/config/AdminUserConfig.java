@@ -4,8 +4,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
-import tech.melvin.springsecurity6.entities.Role;
-import tech.melvin.springsecurity6.entities.User;
+import tech.melvin.springsecurity6.entity.Role;
+import tech.melvin.springsecurity6.entity.User;
 import tech.melvin.springsecurity6.repository.RoleRepository;
 import tech.melvin.springsecurity6.repository.UserRepository;
 
