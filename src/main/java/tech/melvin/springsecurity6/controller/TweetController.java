@@ -1,22 +1,12 @@
 package tech.melvin.springsecurity6.controller;
 
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 import tech.melvin.springsecurity6.controller.dto.CreateTweetDTO;
 import tech.melvin.springsecurity6.controller.dto.FeedDTO;
-import tech.melvin.springsecurity6.controller.dto.FeedItemDTO;
-import tech.melvin.springsecurity6.entities.Role;
-import tech.melvin.springsecurity6.entities.Tweet;
-import tech.melvin.springsecurity6.repository.TweetRepository;
-import tech.melvin.springsecurity6.repository.UserRepository;
 import tech.melvin.springsecurity6.service.TweetService;
-
-import java.util.UUID;
 
 @RestController
 public class TweetController {
