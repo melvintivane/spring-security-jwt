@@ -5,8 +5,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 import tech.melvin.springsecurity6.controller.dto.CreateUserDTO;
-import tech.melvin.springsecurity6.entities.Role;
-import tech.melvin.springsecurity6.entities.User;
+import tech.melvin.springsecurity6.entity.Role;
+import tech.melvin.springsecurity6.entity.User;
 import tech.melvin.springsecurity6.repository.RoleRepository;
 import tech.melvin.springsecurity6.repository.UserRepository;
 
