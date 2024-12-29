@@ -1,4 +1,4 @@
-package tech.melvin.springsecurity6.entities;
+package tech.melvin.springsecurity6.entity;
 
 import jakarta.persistence.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
