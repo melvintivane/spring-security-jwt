@@ -4,8 +4,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
-import tech.melvin.springsecurity6.controller.dto.CreateTweetDTO;
-import tech.melvin.springsecurity6.controller.dto.FeedDTO;
+import tech.melvin.springsecurity6.dto.CreateTweetDTO;
+import tech.melvin.springsecurity6.dto.FeedDTO;
 import tech.melvin.springsecurity6.service.TweetService;
 
 @RestController

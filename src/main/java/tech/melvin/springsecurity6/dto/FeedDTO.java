@@ -1,4 +1,4 @@
-package tech.melvin.springsecurity6.controller.dto;
+package tech.melvin.springsecurity6.dto;
 
 import java.util.List;
 

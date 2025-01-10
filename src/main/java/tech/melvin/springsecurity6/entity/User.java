@@ -2,7 +2,7 @@ package tech.melvin.springsecurity6.entity;
 
 import jakarta.persistence.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import tech.melvin.springsecurity6.controller.dto.LoginRequest;
+import tech.melvin.springsecurity6.dto.LoginRequest;
 
 import java.util.Set;
 import java.util.UUID;
