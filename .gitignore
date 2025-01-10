@@ -1,4 +1,6 @@
 HELP.md
+/src/main/resources/private.key
+/src/main/resources/public.pub
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
