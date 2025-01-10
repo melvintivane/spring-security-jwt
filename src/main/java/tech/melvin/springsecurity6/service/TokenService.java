@@ -1,13 +1,14 @@
 package tech.melvin.springsecurity6.service;
 
-import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.jwt.JwtClaimsSet;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 import org.springframework.stereotype.Service;
-import tech.melvin.springsecurity6.controller.dto.LoginRequest;
-import tech.melvin.springsecurity6.controller.dto.LoginResponse;
+import org.springframework.web.server.ResponseStatusException;
+import tech.melvin.springsecurity6.dto.LoginRequest;
+import tech.melvin.springsecurity6.dto.LoginResponse;
 import tech.melvin.springsecurity6.entity.Role;
 import tech.melvin.springsecurity6.repository.UserRepository;
 
@@ -30,7 +31,7 @@ public class TokenService {
         var user = userRepository.findByUsername(loginRequest.username());
 
         if (user.isEmpty() || !user.get().isLoginCorrect(loginRequest, passwordEncoder)) {
-            throw new BadCredentialsException("User or password is invalid!");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User or password is invalid!");
         }
 
         var now = Instant.now();
